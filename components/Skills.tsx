@@ -21,7 +21,7 @@ const SkillsBox = ({ skills }: Props) => {
             {/* <h3 className="absolute top-36 uppercase tracking-[3px] text-sm italic">
                 hover
             </h3> */}
-            <div className="grid grid-cols-3 lg:grid-cols-8 gap-8">
+            <div className="grid grid-cols-3 xl:grid-cols-5 2xl:grid-cols-8 gap-8">
                 {/* Get first half of skills and map */}
                 {skills?.slice(0, skills.length / 2).map((skill) => (
                     <SingleSkill key={skill._id} skill={skill} />

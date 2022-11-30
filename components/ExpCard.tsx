@@ -21,7 +21,7 @@ function ExpCard({ exp }: Props) {
                 <div className="space-y-8">
 
                     <h4 className="text-xl lg:text-4xl font-light">{exp.jobTitle}</h4>
-                    <p className="font-bold text-base lg:text-2xl mt-1">
+                    <p className="font-bold text-base xl:text-xl 2xl:text-2xl mt-1">
                         {exp.company}
                     </p>
                     

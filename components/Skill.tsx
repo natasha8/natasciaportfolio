@@ -22,8 +22,8 @@ const SingleSkill = ({ skill, }: Props) => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 src={urlFor(skill.image).url()} alt=""
-                className="w-16 h-16 xl:w-32 xl:h-32 object-contain object-center filter group-hover:bg-[#fcdef8]
-                transition duration-300 ease-in-out rounded-lg "
+                className="w-16 h-16 xl:w-20 xl:h-20 2xl:w-32 2xl:h-32 object-contain object-center filter group-hover:bg-[#fcdef8]
+                transition duration-300 ease-in-out rounded-xl "
             />
             <div
                 className="absolute opacity-0 group-hover:opacity-90 transition duration-300 
