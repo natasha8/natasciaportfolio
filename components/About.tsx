@@ -38,6 +38,7 @@ const About = ({ pageInfo }: Props) => {
                 <p>
                     {pageInfo?.backgroundInformation}
                 </p>
+                <div className="bottom-0 border"><a href=""download/></div>
             </div>
         </motion.div>
     );
