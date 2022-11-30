@@ -17,12 +17,12 @@ function Header({ socials }: Props) {
         setOpen(!open)
     }
     return (
-        <header className="w-full border-5 border-red-500 sticky top-0 z-40 flex items-start justify-between px-10 xl:items-center">
+        <header className="w-full h-12  border-5 border-red-500 sticky top-0 z-40 flex justify-between  px-5 lg:px-10 items-center">
             <motion.div
                 initial={{ x: -500, opacity: 0, scale: 0.5 }}
                 animate={{ x: 0, opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5 }}
-                className="flex flex-row items-center"
+                className="w-1/2 flex justify-start items-center space-x-4"
             >
                 {/*Social Icons*/}
                 {socials.map((social) => (
@@ -42,13 +42,13 @@ function Header({ socials }: Props) {
                 initial={{ x: 500, opacity: 0, scale: 0.5 }}
                 animate={{ x: 0, opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5 }}
-                className="pt-3.5 flex justify-end items-center text-[#fcdef8] cursor-pointer border-5 border-red-500 space-x-4"
+                className="w-1/2 flex justify-end items-center text-[#fcdef8] cursor-pointer border-5 border-red-500 space-x-4"
             >
                 <Link href="#contact"  >
                     <div className="flex items-center space-x-4">
 
-                        <FaRegEnvelope className="cursor-pointer text-2xl" />
-                        <p className="uppercase hidden md:inline-flex ">
+                        <FaRegEnvelope className="cursor-pointer text-3xl" />
+                        <p className="uppercase hidden md:inline-flex text-lg ">
                             get in touch
                         </p>
                     </div>
@@ -64,10 +64,10 @@ function Header({ socials }: Props) {
 
             </motion.div>
             {open && (
-                <div className="absolute w-screen h-screen flex justify-center lg:items-center lg:justify-end z-50 " onClick={handler}>
+                <div className="absolute w-screen h-screen lg:h-auto flex  lg:justify-end z-50 top-0" onClick={handler}>
                     <motion.div initial={{ x: 200, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 1 }} className="w-full lg:w-1/6 rounded-l-full lg:rounded-full bg-black/95 flex flex-col justify-center lg:items-center space-y-4 lg:pt-48 lg:pb-10">
+                        transition={{ duration: 1 }} className="w-full h-screen lg:h-auto lg:w-1/5 rounded-l-full  bg-black/95 flex flex-col justify-center lg:items-center space-y-4 lg:py-10">
                         <Link href="#about">
                             <button className="mobileButton">about </button>
                         </Link>

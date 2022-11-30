@@ -16,7 +16,7 @@ const About = ({ pageInfo }: Props) => {
             transition={{ duration: 1.2 }}
             className="h-screen flex flex-col justify-center items-center  relative text-center md:text-left md:flex-row max-w-7xl px-10 "
         >
-            <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-lg lg:text-2xl" >
+            <h3 className="absolute top-24 lg:top-4 uppercase tracking-[20px] text-lg lg:text-2xl pl-5" >
                 About
             </h3>
             <motion.img

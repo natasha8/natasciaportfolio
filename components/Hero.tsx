@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { urlFor } from "../sanity";
@@ -17,7 +17,13 @@ function Hero({ pageInfo }: Props) {
         delaySpeed: 2500,
     });
     return (
-        <div className="h-screen flex flex-col items-center justify-center text-center overflow-hidden space-y-8 pt-28">
+        <div className="w-full h-screen flex flex-col items-center justify-center text-center overflow-hidden space-y-8">
+            <video
+                autoPlay
+                loop
+                src="https://www.youtube.com/embed/urgi2iz9P6U"
+                className="w-full h-full max-h-[60vh] object-contain fixed z-1 opacity-40 top-40"
+            />
             <Circle />
             <Image
                 src={urlFor(pageInfo?.profilePic).url()}

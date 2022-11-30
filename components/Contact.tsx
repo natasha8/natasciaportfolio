@@ -65,7 +65,7 @@ const Contact = ({ pageInfo }: Props) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2 }}
             className=" w-11/12 flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 h-screen justify-evenly mx-auto items-center">
-            <h3 className="absolute top-24 uppercase tracking-[20px] text-lg lg:text-2xl">
+            <h3 className="absolute top-20 lg:top-4 uppercase tracking-[20px] text-lg lg:text-2xl pl-5">
                 Contact
             </h3>
             <div className="w-full flex flex-col space-y-10">
