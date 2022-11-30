@@ -36,7 +36,7 @@ const Projects = ({ projects }: Props) => {
                                 transition={{ duration: 2 }}
                                 src={urlFor(pro?.image).url()}
                                 alt="project"
-                                className="w-full lg:w-1/2 h-[28vh] object-scale-down lg:object-contain"
+                                className="w-full lg:w-1/2 h-[30vh] object-scale-down lg:object-contain"
                             />
                             <div className="h-full space-y-4 lg:space-y-10 px-4 md:px-10 max-w-6xl ">
                                 <div className="flex items-center justify-center space-x-8">
@@ -47,29 +47,26 @@ const Projects = ({ projects }: Props) => {
                                         </span>
                                         : {pro.title}
                                     </h4>
-                                    <a href={pro.linkToBuild} target="_blank" rel="noreferrer noopener" className="flex items-center justify-between uppercase lg:w-[8rem]  py-2 lg:hidden">
-
-                                        <ImEnter className="text-xl" />
-                                    </a>
+                                    
                                 </div>
                                 <div className="w-full h-[30vh] overflow-y-auto overflow-x-hidden z-0 scrollbar-thin scrollbar-track-[#474547] scrollbar-thumb-[#fcdef8]/80">
 
                                     <pre className="text-justify text-xs whitespace-pre-wrap lg:flex lg:text-lg  lg:text-left px-4 lg:px-2  ">{pro.summary}</pre>
                                 </div>
-                                <div className="w-full flex flex-col lg:flex-row items-center justify-between border border-pink-300/50 lg:min-w-[20rem] rounded-lg bg-black/40 px-4 py-2 ">
+                                <div className="w-full flex items-center justify-between border border-pink-300/50 lg:min-w-[20rem] rounded-lg bg-black/40 px-4 py-2 ">
 
-                                    <div className="flex items-center justify-between w-full lg:w-1/3 px-4 py-2 ">{pro.technologies?.map((technology) => (
+                                    <div className="flex items-center justify-between w-2/3 lg:w-1/3 px-4 py-2 ">{pro.technologies?.map((technology) => (
                                         <Image
                                             alt="technologies"
-                                            width={50}
-                                            height={50}
-                                            className="w-full rounded-full lg:w-1/2 h-[28vh] object-scale-down lg:object-contain"
+                                            width={45}
+                                            height={45}
+                                            className="rounded-full w-1/6 h-[28vh] object-scale-down"
                                             key={technology._id}
                                             src={urlFor(technology.image).url()}
                                         />
 
                                     ))}</div>
-                                    <a href={pro.linkToBuild} target="_blank" rel="noreferrer noopener" className="hidden lg:flex items-center justify-end uppercase lg:w-[8rem]  px-4 py-2">
+                                    <a href={pro.linkToBuild} target="_blank" rel="noreferrer noopener" className="flex items-center justify-end uppercase lg:w-[8rem]  px-4 py-2">
 
                                         <ImEnter className="text-4xl" />
                                     </a>

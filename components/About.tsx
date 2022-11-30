@@ -30,15 +30,15 @@ const About = ({ pageInfo }: Props) => {
             <div className="mt-24 space-y-10 px-0 md:px-10">
                 <h4 className="text-xl md:text-4xl font-semibold">
                     Here is a my{" "}
-                    <span className="underline decoration-[#7a368b]/50">
+                    <span className="underline uppercase decoration-[#7a368b]/50">
                         little
                     </span>{" "}
                     backgroud
                 </h4>
-                <p>
+                <pre className="whitespace-pre-wrap">
                     {pageInfo?.backgroundInformation}
-                </p>
-                <div className="bottom-0 border"><a href=""download/>Download my CV</div>
+                </pre>
+                {/* <div className="bottom-0 border"><a href=""download/>Download my CV</div> */}
             </div>
         </motion.div>
     );
